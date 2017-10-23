@@ -8,12 +8,16 @@ import { FixasrModule } from './fixasr/fixasr.module'
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { DropdownComponent } from './shared/dropdown/dropdown.component';
+import { MyhighlightDirective } from './shared/myhighlight/myhighlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    DropdownComponent,
+    MyhighlightDirective
   ],
   imports: [
     BrowserModule,
