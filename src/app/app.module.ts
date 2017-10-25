@@ -12,12 +12,12 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { DropdownComponent } from './shared/dropdown/dropdown.component';
 import { MyhighlightDirective } from './shared/myhighlight/myhighlight.directive';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    DropdownComponent,
     MyhighlightDirective
   ],
   imports: [
@@ -26,7 +26,8 @@ import { MyhighlightDirective } from './shared/myhighlight/myhighlight.directive
     AppRoutingModule,
     MeetingModule,
     AddtagsModule,
-    FixasrModule
+    FixasrModule,
+    DropdownComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
