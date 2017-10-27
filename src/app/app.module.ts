@@ -4,13 +4,13 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { MeetingModule } from './meeting/meeting.module'
 import { AddtagsModule } from './addtags/addtags.module'
 import { FixasrModule } from './fixasr/fixasr.module'
-import { ReactiveFormsModule } from '@angular/forms'
+import { SharedModule } from './shared/shared.module'
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { DropdownComponent } from './shared/dropdown/dropdown.component';
-import { MyhighlightDirective } from './shared/myhighlight/myhighlight.directive';
+
+import { AppData } from './appdata';
 
 
 @NgModule({
@@ -18,18 +18,23 @@ import { MyhighlightDirective } from './shared/myhighlight/myhighlight.directive
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    MyhighlightDirective
   ],
   imports: [
-    ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,
     MeetingModule,
     AddtagsModule,
     FixasrModule,
-    DropdownComponent,
+    SharedModule
   ],
-  providers: [],
+  exports: [
+  ],
+  providers: [AppData,
+    {
+      provide: AppData,
+      useValue: window['APP_DATA']
+    }
+    ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

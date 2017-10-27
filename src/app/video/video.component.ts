@@ -30,7 +30,8 @@ export class VideoComponent {
         // Todo-g Compose URL to handle production and development
         //var location: string = appData.isServerRunning ? 'http://localhost:58880/assets/video/' : 'assets/video/';
         //var location: string = appData.isServerRunning ? 'http://localhost:58880/assets/video/' : 'assets/shortvideo/';
-        var location: string = 'assets/shortvideo/';
+        //var location: string = 'assets/shortvideo/';
+        var location: string = 'assets/';
         //var location: string = 'api/video/';
 
         this.sources = [

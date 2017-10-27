@@ -17,7 +17,8 @@ export class FixasrService {
     isDataFromMemory: boolean = this.appData.isDataFromMemory;
 
     // private _Url_NoServer = 'testdata/2016-10-11 Boothbay Harbor Selectmen.json';
-    private _Url_NoServer = 'testdata/2016-10-11 Boothbay Harbor Selectmen (3 minutes).json';
+    // private _Url_NoServer = 'testdata/2016-10-11 Boothbay Harbor Selectmen (3 minutes).json';
+    private _Url_NoServer = 'assets/2016-10-11 Boothbay Harbor Selectmen (3 minutes).json';
 
     //private _UrlServer = 'api/fixasr/USA/ME/LincolnCounty/BoothbayHarbor/Selectmen/2016-10-11';
     private _UrlServer = 'api/fixasr';
