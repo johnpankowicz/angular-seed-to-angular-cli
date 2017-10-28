@@ -7,7 +7,7 @@ import { AppData } from '../appdata';
 
 @Component({
   moduleId: module.id,
-  selector: 'sd-video',
+  selector: 'gm-video',
   templateUrl: 'video.component.html',
   styleUrls: ['video.component.css']
 })
